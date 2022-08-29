@@ -1,5 +1,5 @@
 # Each page blueprint must have a title, the title may be different from the file name
-title: Notes
+title: Blog Posts
 
 # Each page can have an icon that is shown in page listings when no preview image is available.
 icon: 📖
@@ -13,12 +13,12 @@ columns:
     # (defined in `/site/blueprints/sections/notes.yml` twice with different page status and headline
     sections:
       drafts:
-        extends: sections/notes
+        extends: sections/blogs
         label: Drafts
         status: draft
 
       unlisted:
-        extends: sections/notes
+        extends: sections/blogs
         label: In Review
         status: unlisted
 
@@ -26,7 +26,7 @@ columns:
     # In the second column, we reuse the same section, this time for listed pages and with a different headline
     sections:
       listed:
-        extends: sections/notes
+        extends: sections/blogs
         label: Published
         status: listed
         size: small

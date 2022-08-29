@@ -3,10 +3,10 @@
 # Sections can have different layouts and display additional information or a preview image
 # More about pages sections: https://getkirby.com/docs/reference/panel/sections/pages
 type: pages
-label: Notes
-parent: kirby.page("notes")
+label: Blog
+parent: kirby.page("blog")
 info: "{{ page.published }}"
-template: note
+template: blog
 empty: No notes yet
 sortBy: date desc
 image:
